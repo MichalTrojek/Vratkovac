@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="672.0" prefWidth="778.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.MainController">
+	<children>
+		<TableView fx:id="table" focusTraversable="false" layoutX="561.0" layoutY="14.0" prefHeight="593.0" prefWidth="201.0">
+			<columns>
+				<TableColumn fx:id="eanColumn" editable="false" minWidth="117.0" prefWidth="117.0" resizable="false" sortable="false" text="EAN" />
+				<TableColumn fx:id="amountColumn" minWidth="75.0" prefWidth="82.0" resizable="false" sortable="false" text="MNOŽSTVÍ" />
+			</columns>
+		</TableView>
+		<TextField fx:id="input" alignment="BOTTOM_LEFT" layoutX="14.0" layoutY="14.0" onAction="#onEnter" prefHeight="107.0" prefWidth="527.0" promptText="Vlož ean">
+			<font>
+				<Font size="50.0" />
+			</font>
+		</TextField>
+		<Label layoutX="389.0" layoutY="149.0" prefHeight="25.0" prefWidth="99.0" text="Celkové množství:" />
+		<Label fx:id="totalAmountOfBooks" layoutX="499.0" layoutY="153.0" prefHeight="17.0" prefWidth="33.0" />
+		<Button fx:id="exportButton" layoutX="367.0" layoutY="617.0" mnemonicParsing="false" onAction="#handleExportButton" prefHeight="25.0" prefWidth="172.0" text="Exportovat do excel souboru" />
+		<Label layoutX="389.0" layoutY="181.0" text="Počet titulů:" />
+		<Label fx:id="totalAmountOfRows" layoutX="499.0" layoutY="181.0" prefHeight="17.0" prefWidth="33.0" />
+		<TextField fx:id="pathTextfield" layoutX="14.0" layoutY="617.0" prefHeight="25.0" prefWidth="243.0" promptText="Cesta k cílove složce" />
+		<Button fx:id="pathButton" layoutX="264.0" layoutY="617.0" mnemonicParsing="false" onAction="#handleChooseButton" text="Vybrat složku" />
+		<Button fx:id="removeButton" layoutX="561.0" layoutY="617.0" mnemonicParsing="false" onAction="#handleRemoveButton" text="Odebrat řádek" />
+		<Button fx:id="removeAllButton" layoutX="681.0" layoutY="617.0" mnemonicParsing="false" onAction="#handleRemoveAllButton" text="Odebrat vše" />
+      <Label fx:id="infoLabel" layoutX="561.0" layoutY="650.0" prefHeight="17.0" prefWidth="201.0" />
+	</children>
+</AnchorPane>
