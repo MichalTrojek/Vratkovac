@@ -21,11 +21,11 @@
 				<Font size="50.0" />
 			</font>
 		</TextField>
-		<Label layoutX="389.0" layoutY="149.0" prefHeight="25.0" prefWidth="99.0" text="Celkové množství:" />
-		<Label fx:id="totalAmountOfBooks" layoutX="499.0" layoutY="153.0" prefHeight="17.0" prefWidth="33.0" />
+		<Label layoutX="353.0" layoutY="149.0" prefHeight="25.0" prefWidth="99.0" text="Celkové množství:" />
+		<Label fx:id="totalAmountOfBooks" layoutX="463.0" layoutY="153.0" prefHeight="17.0" prefWidth="81.0" />
 		<Button fx:id="exportButton" layoutX="367.0" layoutY="617.0" mnemonicParsing="false" onAction="#handleExportButton" prefHeight="25.0" prefWidth="172.0" text="Exportovat do excel souboru" />
-		<Label layoutX="389.0" layoutY="181.0" text="Počet titulů:" />
-		<Label fx:id="totalAmountOfRows" layoutX="499.0" layoutY="181.0" prefHeight="17.0" prefWidth="33.0" />
+		<Label layoutX="353.0" layoutY="181.0" text="Počet titulů:" />
+		<Label fx:id="totalAmountOfRows" layoutX="463.0" layoutY="181.0" prefHeight="17.0" prefWidth="64.0" />
 		<TextField fx:id="pathTextfield" layoutX="14.0" layoutY="617.0" prefHeight="25.0" prefWidth="243.0" promptText="Cesta k cílove složce" />
 		<Button fx:id="pathButton" layoutX="264.0" layoutY="617.0" mnemonicParsing="false" onAction="#handleChooseButton" text="Vybrat složku" />
 		<Button fx:id="removeButton" layoutX="561.0" layoutY="617.0" mnemonicParsing="false" onAction="#handleRemoveButton" text="Odebrat řádek" />

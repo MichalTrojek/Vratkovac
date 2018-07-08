@@ -13,7 +13,7 @@ public class Main extends Application {
 	public void start(Stage primaryStage) {
 		try {
 
-			Parent root = FXMLLoader.load(getClass().getResource("/application/Main.fxml"));
+			Parent root = FXMLLoader.load(getClass().getResource("/application/ui/Main.fxml"));
 			Scene scene = new Scene(root);
 			scene.getStylesheets().add("application.css");
 			primaryStage.getIcons().add(new Image("/images/icons8_Return_Book_48px.png"));
