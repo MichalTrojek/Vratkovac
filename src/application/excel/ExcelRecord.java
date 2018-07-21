@@ -9,18 +9,7 @@ public class ExcelRecord {
 		this.amount = amount;
 	}
 
-	public ExcelRecord(String ean, String amount, String price) {
-		this.ean = ean;
-		this.amount = amount;
-		this.price = price;
-	}
-
-	public ExcelRecord(String ean, String amount, String price, double totalPrice) {
-		this.ean = ean;
-		this.amount = amount;
-		this.price = price;
-		this.totalPrice = totalPrice;
-	}
+	
 
 	public String getEan() {
 		return this.ean;
